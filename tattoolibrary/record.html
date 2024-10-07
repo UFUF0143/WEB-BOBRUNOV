@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Тату салон Бобер - Запись на сеанс</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение иконки страницы (favicon) и файла стилей -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-record">
+    <!-- Основной контейнер для формы записи на сеанс -->
+    <div class="form-container">
+        <h3>Запись на сеанс</h3>
+        
+        <!-- Поле для ввода имени -->
+        <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <!-- Поле для ввода номера телефона -->
+        <div class="form-field">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 123 456 78 90" required>
+        </div>
+
+        <!-- Поле для ввода предполагаемого размера татуировки -->
+        <div class="form-field">
+            <label for="size">Размер тату</label>
+            <input type="text" id="size" name="size" placeholder="Пример: 10х10 см" required>
+        </div>
+
+        <!-- Текстовое поле для описания идеи татуировки -->
+        <div class="form-field">
+            <label for="description">Описание идеи</label>
+            <textarea id="description" name="description" placeholder="Опишите свою идею" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Записаться</button>
+    </div>
+</body>
+</html>

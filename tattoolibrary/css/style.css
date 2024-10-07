@@ -1,0 +1,270 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* Устанавливаем отступы для основного контейнера */
+.container {
+    margin: 0px 166px;
+}
+
+/* Применяем шрифт и основной цвет для всех элементов */
+* {
+    font-family: "Poiret One", sans-serif;
+    color: azure;
+}
+
+/* Настройки фона для страницы и высота на весь экран */
+body {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Стили для строки шапки сайта с логотипом и навигацией */
+.header-line {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Стили для навигационных ссылок */
+.nav-item {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 14px;
+    transition: color 0.2s linear;
+}
+
+/* Изменение цвета ссылки при наведении курсора */
+.nav-item:hover {
+    color: #7d7d7d;
+}
+
+/* Стили для подзаголовков (телефон) */
+h2 {
+    font-size: 25px;
+    border-left: 1px solid #FFFFFF;
+    padding-left: 10px;
+    height: 30px;
+}
+
+/* Стили для заголовков */
+h1 {
+    font-size: 30px;
+}
+
+/* Стили для основного заголовка на главной странице */
+.main-title {
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    margin-top: 90px;
+}
+
+/* Блок для контента под заголовком */
+.main-down {
+    position: relative;
+}
+
+/* Стили для подзаголовка на главной странице */
+.main-suptitle {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    margin-top: 230px;
+    width: 720px;
+}
+
+/* Стили для изображения на главной странице */
+.main-img {
+    margin-left: 1000px;
+    margin-top: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    background: url(../img/main-picture.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+}
+
+/* Стили для блока с колонками на странице каталога */
+.textcols {
+    width: 100%;
+    overflow: hidden; /* clearfix для родителя */
+}
+
+/* Стили для каждой отдельной колонки */
+.textcols-item {
+    width: 30%;
+    float: left; /* используем float для колонок */
+    margin-right: 5%;
+    font-size: 18px;
+    margin-top: 30px; /* Регулируем отступ сверху */
+    text-align: center; /* Центрируем изображения и текст */
+}
+
+/* Стили для изображения внутри каждой колонки */
+.textcols-item img {
+    width: 100%; /* Картинка будет занимать всю ширину блока */
+    height: auto; /* Сохраняем пропорции */
+    margin-bottom: 20px; /* Добавляем отступ между изображением и текстом */
+}
+
+/* Убираем отступ для последней колонки */
+.textcols-item:last-child {
+    margin-right: 0;
+}
+
+/* Стили для формы записи на сеанс татуировки */
+.body-record {
+    font-family: "Poiret One", sans-serif;
+    background: url(../img/background.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для контейнера с формой */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    padding: 30px;
+    border-radius: 10px; /* Скругленные углы */
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для объема */
+}
+
+/* Стили для заголовка формы */
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для каждого поля формы */
+.form-field {
+    margin-bottom: 15px;
+}
+
+/* Стили для меток полей формы */
+.form-field label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Стили для полей ввода и текстовых областей */
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Белый фон для полей */
+    color: #333; /* Темный текст */
+}
+
+/* Специальные стили для текстовой области (textarea) */
+.form-field textarea {
+    height: 100px;
+    resize: none; /* Запрещаем изменение размера поля */
+}
+
+/* Стили для кнопки отправки формы */
+.submit-btn {
+    width: 420px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ff4400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Изменение цвета кнопки при наведении */
+.submit-btn:hover {
+    background-color: #e63900;
+}
+
+
+/* Стили для экранов шириной до 768px (планшеты и телефоны) */
+@media (max-width: 820px) {
+    .main-title{
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 0 10px; /* Уменьшаем отступы */
+    }
+
+    .header-line {
+        flex-direction: column; /* Располагаем элементы вертикально */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .nav-item {
+        font-size: 24px; /* Уменьшаем размер текста */
+        margin-right: 0; /* Убираем отступы между ссылками */
+        margin-bottom: 10px; /* Добавляем отступ снизу для ссылок */
+    }
+
+    .h1 {
+        font-size: 24px; /* Уменьшаем размер заголовка */
+    }
+
+    .h2 {
+        font-size: 18px; /* Уменьшаем размер подзаголовка */
+        border-left: none; /* Убираем вертикальную линию */
+        padding-left: 0;
+    }
+
+    .main-title {
+        font-size: 40px; /* Уменьшаем заголовок */
+        left: 20px; /* Сдвигаем левый отступ */
+    }
+
+    .main-suptitle {
+        font-size: 18px; /* Уменьшаем размер подзаголовка */
+        left: 20px; /* Сдвигаем левый отступ */
+        margin-top: 150px; /* Уменьшаем верхний отступ */
+        width: 90%; /* Ширина 90% экрана для текста */
+    }
+
+    .main-img {
+        margin-left: 0; /* Центрируем изображение */
+        margin-top: 30px;
+        width: 90%; /* Уменьшаем ширину изображения */
+        height: auto; /* Пропорциональное изменение высоты */
+    }
+
+    .textcols-item {
+        width: 100%; /* Устанавливаем ширину блока на 100% */
+        margin-bottom: 20px; /* Добавляем отступ снизу для каждого блока */
+    }
+
+    /* Адаптация формы записи */
+    .form-container {
+        width: 100%; /* Увеличиваем ширину формы до 100% */
+        padding: 20px; /* Уменьшаем отступы */
+    }
+
+    .submit-btn {
+        width: 100%; /* Кнопка теперь занимает всю ширину формы */
+    }
+}
+@media (max-width: 380px) {
+    .main-title{
+        font-size: 25px;
+    }
+}
