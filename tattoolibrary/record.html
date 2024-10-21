@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Тату салон Бобер</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение иконки страницы (favicon) и CSS файла -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href="index.html">
+                    <img src="img/logo.png" alt="" width="120">
+                </a>
+                </div>
+                <h1>Заполните небольшую анкету</h1>
+                <h2>+7 950 077 92 19</h2>
+            </div>
+        </div>
+    </header>
+    <div class="body-record">
+    <!-- Основной контейнер для формы записи на сеанс -->
+     <main>
+        <div class="form-container">
+            <h3>Запись на сеанс</h3>
+            
+            <!-- Поле для ввода имени -->
+            <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+
+            <!-- Поле для ввода номера телефона -->
+            <div class="form-field">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 123 456 78 90" required>
+            </div>
+
+            <!-- Поле для ввода предполагаемого размера татуировки -->
+            <div class="form-field">
+                <label for="size">Размер тату</label>
+                <input type="text" id="size" name="size" placeholder="Пример: 10х10 см" required>
+            </div>
+
+            <!-- Текстовое поле для описания идеи татуировки -->
+            <div class="form-field">
+                <label for="description">Описание идеи</label>
+                <textarea id="description" name="description" placeholder="Опишите свою идею" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Записаться</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+          <p>Сделал студент Бобрунов Егор | email: <a href="mailto:ebobrunov@mail.ru">ebobrunov@mail.ru</a></p>
+        </div>
+      </footer>
+</body>
+</html>
