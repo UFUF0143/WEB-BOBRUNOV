@@ -1,0 +1,402 @@
+/* Подключение шрифта Poiret One через Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* Применяем шрифт и основной цвет текста для всех элементов */
+* {
+    font-family: "Poiret One", sans-serif; /* Применение шрифта ко всем элементам */
+    color: azure; /* Основной цвет текста */
+}
+
+/* Настройки фона для страницы */
+body {
+    background: url(../img/background.jpg) no-repeat center center fixed; /* Фон с изображением, закрепленный на экране без повтора */
+    background-size: cover; /* Изображение растягивается, чтобы покрыть весь экран */
+    height: 100vh; /* Высота на весь экран */
+    width: 100vw; /* Ширина на весь экран */
+}
+
+/* Контейнер с отступами для центрирования содержимого */
+.container {
+    margin: 0px 166px; /* Отступы по бокам */
+}
+
+/* Настройки шапки сайта */
+.header-line {
+    padding-top: 20px; /* Отступ сверху */
+    display: flex; /* Использование Flexbox для выравнивания элементов */
+    align-items: center; /* Центрирование элементов по вертикали */
+    justify-content: space-around; /* Пространство равномерно распределено между элементами */
+}
+
+/* Стили для навигационных ссылок */
+.nav-item {
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 30px; /* Размер шрифта */
+    margin-right: 14px; /* Отступ справа между ссылками */
+    transition: color 0.2s linear; /* Плавное изменение цвета при наведении */
+}
+
+/* Изменение цвета ссылки при наведении */
+.nav-item:hover {
+    color: #7d7d7d; 
+}
+
+/* Стили для номера */
+h2 {
+    font-size: 25px; /* Размер шрифта */
+    border-left: 1px solid #FFFFFF; /* Линия слева от текста */
+    padding-left: 10px; /* Отступ слева от линии */
+    height: 30px; /* Высота элемента */
+}
+
+/* Стили для основного блока с изображениями и текстом */
+.main-down {
+    margin-top: 80px; /* Отступ сверху */
+    width: 100%; /* Ширина на 100% экрана */
+    display: flex; 
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 185px; /* Расстояние между элементами */
+}
+
+/* Стили для блока текста */
+.main-text {
+    width: 50%; /* Ширина на 50% экрана */
+}
+
+/* Основной заголовок на главной странице */
+.main-title {
+    font-weight: bold; /* Полужирный текст */
+    font-size: 80px; /* Размер шрифта */
+}
+
+/* Подзаголовок на главной странице */
+.main-suptitle {
+    margin-top: 25px; /* Отступ сверху */
+    font-weight: bold; /* Полужирный текст */
+    font-size: 25px; /* Размер шрифта */
+}
+
+/* Стиль для изображения на главной странице */
+.main-img {
+    margin-top: 10px; /* Отступ сверху */
+    border: 3px solid rgb(255, 255, 255); /* Белая рамка вокруг изображения */
+    background: url(../img/main-picture.jpg) no-repeat; /* Фоновое изображение */
+    background-size: cover; /* Изображение полностью покрывает блок */
+    height: 400px; /* Высота изображения */
+    width: 300px; 
+}
+
+/* Стили для футера */
+footer {
+    width: 100%; /* Ширина на всю страницу */
+    margin-top: 25px; /* Отступ сверху */
+    position: absolute; /* Фиксированное позиционирование */
+    display: flex; 
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+/* Стили для текста в футере */
+.footer-text {
+    text-align: center; /* Центрирование текста */
+    width: 100%; /* Ширина на всю страницу */
+    font-size: 14px; /* Размер шрифта */
+    font-weight: bold; /* Полужирное начертание */
+}
+
+/* Flexbox-контейнер для создания колонок */
+.textcols {
+    width: 100%; /* Ширина на всю страницу */
+    display: flex; /* Использование Flexbox для создания горизонтальных колонок */
+    justify-content: center; /* Центрирование колонок по горизонтали */
+    gap: 110px; /* Расстояние между колонками */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Стиль для заголовка */
+h1 {
+    font-size: 30px; /* Размер шрифта заголовка */
+}
+
+/* Стили для каждого элемента колонки */
+.textcols-item {
+    width: 25%; /* Ширина каждого элемента колонки */
+    display: flex; /* Flexbox для вертикального размещения содержимого */
+    flex-direction: column; /* Элементы располагаются вертикально */
+}
+
+/* Настройки изображений внутри колонок */
+.textcols-item img {
+    align-self: center; /* Центрирование изображений */
+    width: 100%; /* Ширина изображения на 100% от ширины колонки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+/* Стили для текста внутри колонок */
+.textcols-item-text {
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin-top: 16px; /* Отступ сверху */
+}
+
+/* Основной блок формы для записи */
+.body-record {
+    height: 70vh; /* Высота блока на 70% экрана */
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+/* Контейнер для формы */
+.form-container {
+    padding: 30px; /* Внутренние отступы */
+    border-radius: 10px; /* Скругленные углы */
+    width: 400px;
+}
+
+/* Заголовок формы */
+h3 {
+    font-size: 30px;
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Общие стили для полей формы */
+.form-field {
+    margin-bottom: 15px; /* Отступ снизу между полями */
+}
+
+/* Стили для меток полей */
+.form-field label {
+    display: block; /* Метка занимает всю ширину строки */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Стили для полей ввода и текстовых областей */
+.form-field input, .form-field textarea {
+    width: 100%; /* Ширина полей на 100% от контейнера */
+    padding: 10px; 
+    font-size: 16px; 
+    border: none; /* Без рамок */
+    border-radius: 5px; /* Скругленные углы */
+    background-color: #fff; 
+    color: #333; 
+}
+
+/* Стили для текстовой области (textarea) */
+.form-field textarea {
+    height: 100px; /* Высота текстовой области */
+    resize: none; /* Запрещаем изменение размера */
+}
+
+/* Кнопка отправки формы */
+.submit-btn {
+    width: 420px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ff4400;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Изменение цвета кнопки при наведении */
+.submit-btn:hover {
+    background-color: #e63900; 
+}
+
+
+@media (max-width: 1199px) {
+    .container {
+        margin: 0 50px;
+    }
+
+    .nav-item {
+        font-size: 24px; 
+    }
+
+    .main-title {
+        font-size: 50px; 
+    }
+
+    .main-suptitle {
+        font-size: 20px; 
+    }
+
+    .main-img {
+        width: 250px; 
+        height: 350px;
+    }
+    footer {
+        margin-top: 40px; 
+    }
+
+    .footer-text {
+        font-size: 12px; 
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .submit-btn {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 975px) {
+    .main-down {
+    gap: 112px;
+    }
+    .textcols{
+        gap: 80px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .header-line {
+        flex-direction: column; /* Элементы в колонку */
+        align-items: center; /* Центрирование элементов */
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 18px; 
+    }
+
+    .main-down {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .main-text{
+        width: 70%;
+    }
+
+    .main-title {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .main-suptitle {
+        text-align: center;
+        font-size: 16px; 
+    }
+
+    .main-img {
+        width: 200px; 
+        height: 300px;
+        margin-top: 0;
+    }
+
+
+    .footer-text {
+        font-size: 10px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .textcols {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .textcols-item {
+        width: 45%;
+    }
+    .form-container {
+        width: 300px;
+        padding: 20px;
+    }
+    .form-field label {
+        font-size: 16px; 
+    }
+    .form-field input, .form-field textarea {
+        padding: 8px;
+        font-size: 14px; 
+    }
+    .submit-btn {
+        width: 316px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 10px; 
+    }
+    h2 {
+        font-size: 15px;
+    }
+
+    .nav-item {
+        font-size: 16px; 
+    }
+
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .main-suptitle {
+        font-size: 14px; 
+    }
+
+    .main-img {
+        width: 150px; 
+        height: 250px;
+    }
+
+    .footer-text {
+        font-size: 8px; 
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .textcols-item {
+        width: 35%;
+    }
+    .textcols-item-text {
+        font-size: 12px;
+    }
+    .form-container {
+        width: 200px;
+        padding: 10px;
+    }
+    .form-field label {
+        font-size: 16px; 
+    }
+    .form-field input, .form-field textarea {
+        padding: 8px;
+        font-size: 14px; 
+    }
+    .submit-btn {
+        width: 216px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+    
+
+@media (max-width: 180px) {
+    .main-img {
+        width: 100px; 
+        height: 200px;
+    }
+    .form-container {
+        width: 150px;
+        padding: 5px;
+    }
+    .submit-btn {
+        width: 166px;
+    }
+}
+
+
+
+
