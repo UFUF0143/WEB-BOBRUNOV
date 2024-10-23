@@ -1,1 +1,0 @@
-https://tattoo.tiiny.site/index.html
